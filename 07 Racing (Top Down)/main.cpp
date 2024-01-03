@@ -14,4 +14,8 @@ struct Car
   float x,y,speed,angle; int n;
 
   Car() {speed=2; angle=0; n=0;}
-
+void move()
+   {
+    x += sin(angle) * speed;
+    y -= cos(angle) * speed;
+   }
