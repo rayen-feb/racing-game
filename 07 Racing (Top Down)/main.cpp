@@ -74,5 +74,9 @@ int main()
     if (Keyboard::isKeyPressed(Keyboard::Right)) Right=1;
     if (Keyboard::isKeyPressed(Keyboard::Down)) Down=1;
     if (Keyboard::isKeyPressed(Keyboard::Left)) Left=1;
+ //car movement
+    if (Up && speed<maxSpeed)
+        if (speed < 0)  speed += dec;
+        else  speed += acc;
 
 
