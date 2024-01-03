@@ -10,3 +10,8 @@ nt points[num][2] = {300, 610,
                       500, 3300};
 
 struct Car
+{
+  float x,y,speed,angle; int n;
+
+  Car() {speed=2; angle=0; n=0;}
+
