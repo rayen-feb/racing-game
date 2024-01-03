@@ -69,5 +69,10 @@ int main()
             if (e.type == Event::Closed)
                 app.close();
         }
+  bool Up=0,Right=0,Down=0,Left=0;
+    if (Keyboard::isKeyPressed(Keyboard::Up)) Up=1;
+    if (Keyboard::isKeyPressed(Keyboard::Right)) Right=1;
+    if (Keyboard::isKeyPressed(Keyboard::Down)) Down=1;
+    if (Keyboard::isKeyPressed(Keyboard::Left)) Left=1;
 
 
