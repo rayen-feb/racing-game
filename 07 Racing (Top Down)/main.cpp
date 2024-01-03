@@ -40,3 +40,21 @@ int main()
     t2.loadFromFile("images/car.png");
     t1.setSmooth(true);
     t2.setSmooth(true);
+
+    Sprite sBackground(t1), sCar(t2);
+    sBackground.scale(2,2);
+
+    sCar.setOrigin(22, 22);
+    float R=22;
+
+    const int N=5;
+    Car car[N];
+    for(int i=0;i<N;i++)
+    {
+      car[i].x=300+i*50;
+      car[i].y=1700+i*80;
+      car[i].speed=7+i;
+    }
+
+   
+
