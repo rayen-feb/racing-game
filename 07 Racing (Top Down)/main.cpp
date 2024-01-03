@@ -61,5 +61,13 @@ int main()
 
    int offsetX=0,offsetY=0;
 
-   
+   while (app.isOpen())
+    {
+        Event e;
+        while (app.pollEvent(e))
+        {
+            if (e.type == Event::Closed)
+                app.close();
+        }
+
 
