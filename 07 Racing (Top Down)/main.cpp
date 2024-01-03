@@ -55,6 +55,11 @@ int main()
       car[i].y=1700+i*80;
       car[i].speed=7+i;
     }
+ float maxSpeed=12.0;
+   float acc=0.2, dec=0.3;
+   float turnSpeed=0.08;
+
+   int offsetX=0,offsetY=0;
 
    
 
